@@ -5,14 +5,17 @@
     --midle-gray: #5D5D5D;
     --midl-lite-gray: #E1E1E1;
     --light-gray: #9F9F9F;
-    --shadow-gray: #E5E5E5 --lite-pink: #F1E4E6;
+    --shadow-gray: #E5E5E5;
+    --lite-pink: #F1E4E6;
     --midle-pink: #F26376;
     --dark-pink: #F16D7F;
     --coral: #FF6A6A;
     --braun: #211616B2;
+    --lite-lite-pink: #F8F3F4;
     --bege: #F8F8F8;
     --white: #FBFBFB;
     --whiter: #FFFFFF;
+    --gray-color: #B1B1B1;
 }
 
 body {
@@ -73,8 +76,7 @@ body {
     margin: 0 34px 0 0;
 }
 
-.header__button:hover,
-.header__button:focus {
+.header__button:hover {
     opacity: 0.5;
     cursor: pointer;
 }
@@ -94,21 +96,19 @@ body {
     top: 53px;
 }
 
-.header__button_menu:active~.owerlay {
+.header__button_menu:hover~.owerlay {
     display: block;
 }
 
-.header__button_menu:active~.header__navigation {
+.header__button_menu:hover~.header__navigation {
     display: block;
 }
 
-.header__navigation:hover,
-.header__navigation:focus {
+.header__navigation:hover {
     display: block;
 }
 
-.header__navigation:hover,
-.header__navigation:focus~.owerlay {
+.header__navigation:hover .owerlay {
     display: block;
 }
 
@@ -116,11 +116,11 @@ body {
     margin: 16px 17px 9px 203px;
 }
 
-.header__button_closing:active~.header__navigation {
+.header__button_closing:active .header__navigation {
     display: none;
 }
 
-.header__button_closing:active~.owerlay {
+.header__button_closing:active .owerlay {
     display: none;
 }
 
@@ -132,14 +132,12 @@ body {
     margin: 0 0 24px 34px;
 }
 
-.menu-list__title:hover,
-.menu-list__title:focus {
+.menu-list__title:hover {
     opacity: 0.5;
     cursor: pointer;
 }
 
-.list-items__item:hover,
-.list-items__item:focus {
+.list-items__item:hover {
     opacity: 0.5;
     cursor: pointer;
 }
@@ -552,4 +550,147 @@ body {
 
 .socials-box:hover .socials__icon-svg {
     fill: var(--whiter);
+}
+
+.registration-sector {
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: var(--whiter);
+}
+
+.registration-sector__wrapper-title {
+    background-color: var(--lite-lite-pink);
+    min-height: 148px;
+}
+
+.registration-sector__title {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--dark-pink);
+    padding: 59px 0 60px;
+}
+
+.containers-registration {
+    display: flex;
+    min-height: 675px;
+    padding: 64px 0 0;
+}
+
+.registration-fieldset {
+    max-width: 360px;
+}
+
+.registration-fieldset__titl {
+    font-weight: 300;
+}
+
+.registration-fieldset__input {
+    border: 1px solid #A4A4A4;
+    width: 360px;
+    height: 45px;
+    margin: 21px 0 0;
+}
+
+.registration-fieldset__input:hover {
+    outline-color: var(--coral);
+    cursor: pointer;
+}
+
+.registration-fieldset__input[placeholder] {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--gray-color);
+    padding: 0 0 0 17px;
+}
+
+.registration-fieldset__radio-input {
+    margin: 31px 10px 33px 0;
+}
+
+.registration-fieldset__radio-label {
+    margin: 0 20px 0 0;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.registration-fieldset__radio-label:hover {
+    color: var(--dark-pink);
+    opacity: 0.5;
+    cursor: pointer;
+    outline: var(--coral);
+}
+
+.registration-fieldset__text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    margin: 15px 0 0;
+    color: var(--gray-color);
+}
+
+.registration-sector__btn {
+    background-color: var(--dark-pink);
+    width: 167px;
+    height: 50px;
+    border: none;
+    margin: 39px 0 0;
+    color: var(--whiter);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 17px;
+    position: relative;
+}
+
+.registration-sector__btn:after {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 10px;
+    background-image: url(../img/arrow.png);
+    background-size: 17px 10px;
+    top: 20px;
+    right: 23px;
+}
+
+.wrapper-perks {
+    margin: 0 0 0 128px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.wrapper-perks__title {
+    text-transform: uppercase;
+    margin: 0 0 22px;
+}
+
+.wrapper-perks__text {
+    margin: 0 0 21px;
+}
+
+.perks-list__item {
+    margin: 0 0 16px;
+    position: relative;
+}
+
+.perks-list__item::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background-image: url(../img/check-mark.png);
+    background-size: 20px 16px;
+    left: -32px;
+    top: 8px;
+}
+
+.registration-sector__btn:hover {
+    cursor: pointer;
+    color: var(--midle-pink);
+    border-color: var(--coral);
+    background-color: var(--lite-lite-pink);
+    border: 1px solid;
 }

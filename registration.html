@@ -10,8 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>Internet shop</title>
-
+    <title>registration page</title>
 </head>
 
 <body>
@@ -24,15 +23,12 @@
                             height="27"></button>
                 </div>
                 <div class="header__items">
-                    <button class="header__button header__button_menu" type="button">
-                        <img src="./img/menu.png" alt="menu" width="32" height="23">
-                    </button>
-                    <button class="header__button header__button_userpic" type="submit">
-                        <img src="./img/logo-men.png" alt="userpic" width="29" height="29">
-                    </button>
-                    <button class="header__button" type="button">
-                        <img src="./img/buskcet.png" alt="basket" width="32" height="29">
-                    </button>
+                    <button class="header__button header__button_menu" type="button"><img src="./img/menu.png"
+                            alt="menu" width="32" height="23"></button>
+                    <button class="header__button header__button_userpic" type="submit"><img src="./img/logo-men.png"
+                            alt="userpic" width="29" height="29"></button>
+                    <button class="header__button" type="button"> <img src="./img/buskcet.png" alt="basket" width="32"
+                            height="29"></button>
                     <div class="owerlay"></div>
                     <nav class="header__navigation">
 
@@ -92,172 +88,61 @@
 
     </header>
     <main>
-        <section class="brand">
-            <img class="brand__man" src="./img/brend-men.jpg" alt="men" width="800" height="765">
-            <div class="brand__title-wrapper">
-                <h1 class="brand__title">the brand <span class="brand__subtitle">of luxerious <span
-                            class="brand__color-subtitle"> fashion</span></span>
-                </h1>
+        <section class="registration-sector">
+            <div class="registration-sector__wrapper-title">
+                <h1 class="container registration-sector__title">registration</h1>
             </div>
-        </section>
-        <section class="offers container">
-            <h2 class="visually-hidden">offers</h2>
-            <ul class="offers__list">
+            <div class="container containers-registration">
+                <form class="container registration-form" action="#">
+                    <fieldset class="registration-fieldset">
+                        <legend class="registration-fieldset__titl">Your Name</legend>
+                        <label for="name"></label>
+                        <input class="registration-fieldset__input" type="text" id="name" placeholder="First Name"
+                            required>
+                        <label for="surname"></label>
+                        <input class="registration-fieldset__input" type="text" id="surname" required
+                            placeholder="Last Name">
+                        <input class="registration-fieldset__radio-input" type="radio" id="male" name="gender"
+                            value="gender" checked>
+                        <label class="registration-fieldset__radio-label" for="male">Male</label>
+                        <input class="registration-fieldset__radio-input" type="radio" id="female" name="gender"
+                            value="gender">
+                        <label class="registration-fieldset__radio-label" for="female">Female</label>
+                    </fieldset>
+                    <fieldset class="registration-fieldset">
+                        <legend class="registration-fieldset__titl">Login details</legend>
+                        <input class="registration-fieldset__input" type="email" id="email" placeholder="Email"
+                            required>
+                        <label for="email"></label>
+                        <input class="registration-fieldset__input" type="password" id="password" placeholder="Password"
+                            required>
+                        <label for="password"></label>
+                        <p class="registration-fieldset__text">Please use 8 or more characters, with at least 1 number
+                            and a mixture of uppercase and
+                            lowercase
+                            letters</p>
+                    </fieldset>
+                    <button class="registration-sector__btn" type="submit">join now</button>
+                </form>
+                <div class="wrapper-perks">
+                    <h2 class="wrapper-perks__title">loyalty has its perks</h2>
+                    <p class="wrapper-perks__text">Get in on the loyalty program where you can earn points and unlock
+                        serious perks. Starting with
+                        these
+                        as soon as you join:</p>
+                    <ul class="perks-list">
+                        <li class="perks-list__item">15% off welcome offer
+                        </li>
+                        <li class="perks-list__item">Free shipping, returns and exchanges on all orders
 
-                <li class="offers__item offers__item_women">
-                    <h3 class="offers__title">30% off
-                        <span class="offers__title-color">for women</span>
-                    </h3>
-                </li>
-                <li class="offers__item offers__item_men">
-                    <h3 class="offers__title">hot deal
-                        <span class="offers__title-color"> for men</span>
-                    </h3>
-                </li>
-                <li class="offers__item offers__item_kids">
-                    <h3 class="offers__title">new arrivals
-                        <span class="offers__title-color"> for kids</span>
-                    </h3>
-                </li>
+                        </li>
+                        <li class="perks-list__item">$10 off a purchase on your birthday
 
-                <li class="offers__item offers__item_accesories">
-                    <h3 class="offers__title">luxirous & trendy
-                        <span class="offers__title-color"> accesories</span>
-                    </h3>
-                </li>
-            </ul>
-        </section>
-        <section class="products container">
-            <h2 class="products__heading">Fetured Items</h2>
-            <p class="products__text">Shop for items based on what we featured in this week</p>
-            <ul class="products-list">
-                <li class="products-list__item">
-                    <img class="products-list__pickter" src="./img/product-1.jpg" alt="clothes men" width="360"
-                        height="420">
-                    <h3 class="products-list__title">ellery x m'o capsule</h3>
-                    <p class="products-list__features">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="products-list__price">$52.00</p>
-                    <div class="products-item__owerlay"></div>
-
-                    <button class="products-item__add-button" type="submit">Add to Cart</button>
-
-                </li>
-                <li class="products-list__item">
-                    <img class="products-list__pickter" src="./img/product-2.jpg" alt="clothes women" width="360"
-                        height="420">
-                    <h3 class="products-list__title">ellery x m'o capsule</h3>
-                    <p class="products-list__features">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="products-list__price">$52.00</p>
-                    <div class="products-item__owerlay"></div>
-
-                    <button class="products-item__add-button" type="submit">Add to Cart</button>
-
-                </li>
-                <li class="products-list__item">
-                    <img class="products-list__pickter" src="./img/product-3.jpg" alt="clothes men" width="360"
-                        height="420">
-                    <h3 class="products-list__title">ellery x m'o capsule</h3>
-                    <p class="products-list__features">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="products-list__price">$52.00</p>
-                    <div class="products-item__owerlay"></div>
-
-                    <button class="products-item__add-button" type="submit">Add to Cart</button>
-
-                </li>
-                <li class="products-list__item">
-                    <img class="products-list__pickter" src="./img/product-4.jpg" alt="clothes men" width="360"
-                        height="420">
-                    <h3 class="products-list__title">ellery x m'o capsule</h3>
-                    <p class="products-list__features">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="products-list__price">$52.00</p>
-                    <div class="products-item__owerlay"></div>
-
-                    <button class="products-item__add-button" type="submit">Add to Cart</button>
-
-                </li>
-                <li class="products-list__item">
-                    <img class="products-list__pickter" src="./img/product-5.jpg" alt="clothes woman" width="360"
-                        height="420">
-                    <h3 class="products-list__title">ellery x m'o capsule</h3>
-                    <p class="products-list__features">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="products-list__price">$52.00</p>
-                    <div class="products-item__owerlay"></div>
-
-                    <button class="products-item__add-button" type="submit">Add to Cart</button>
-
-                </li>
-                <li class="products-list__item">
-                    <img class="products-list__pickter" src="./img/product-6.jpg" alt="clothes woman" width="360"
-                        height="420">
-                    <h3 class="products-list__title">ellery x m'o capsule</h3>
-                    <p class="products-list__features">Known for her sculptural takes on traditional tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="products-list__price">$52.00</p>
-                    <div class="products-item__owerlay"></div>
-
-                    <button class="products-item__add-button" type="submit">Add to Cart</button>
-
-                </li>
-            </ul>
-            <a class="products-button" href="#">Browse All Product</a>
-        </section>
-        <section class="advantages">
-            <div class="container">
-                <ul class="advantages-list">
-                    <li class="advantages-list__item">
-                        <div class="box-size"> <img class="advantages-item__icon" src="./img/car-icon.png" alt="car"
-                                width="45" height="32"></div>
-                        <h3 class="advantages-item__title">Free Delivery</h3>
-                        <p class="advantages-item__desc">Worldwide delivery on all. Authorit tively morph
-                            next-generation
-                            innov tion with extensive
-                            models.
-                        </p>
-                    </li>
-                    <li class="advantages-list__item">
-                        <div class="box-size"> <img class="advantages-item__icon" src="./img/procent-icon.png"
-                                alt="procent" width="40" height="40"></div>
-                        <h3 class="advantages-item__title">Sales & discounts</h3>
-                        <p class="advantages-item__desc">Worldwide delivery on all. Authorit tively morph
-                            next-generation
-                            innov tion with extensive
-                            models.
-                        </p>
-                    </li>
-                    <li class="advantages-list__item">
-                        <div class="box-size"> <img class="advantages-item__icon" src="./img/crown-icon.png" alt="crown"
-                                width="47" height="35"></div>
-                        <h3 class="advantages-item__title">Quality assurance</h3>
-                        <p class="advantages-item__desc">Worldwide delivery on all. Authorit tively morph
-                            next-generation
-                            innov tion with extensive
-                            models.
-                        </p>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="perks-list__item">Early access to products</li>
+                        <li class="perks-list__item">Exclusive offers & rewards</li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -330,7 +215,6 @@
         </section>
 
     </footer>
-
 </body>
 
 </html>
