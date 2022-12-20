@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <title>registration page</title>
+    <title>Shoping cart</title>
 </head>
 
 <body>
@@ -27,7 +27,7 @@
                     <button class="header__button header__button_menu" type="button">
                         <img src="./img/menu.png" alt="menu" width="32" height="23">
                     </button>
-                    <a class="header__button header__button_userpic" href="#">
+                    <a class="header__button header__button_userpic" href="./registration.html">
                         <img src="./img/logo-men.png" alt="userpic" width="29" height="29">
                     </a>
                     <a class="header__button" href="./hoping-cart.html">
@@ -90,64 +90,68 @@
 
     </header>
     <main>
-
         <div class="caption-holder">
-            <h1 class="container caption-holder__title">registration</h1>
+            <h1 class="container caption-holder__title">shopping cart</h1>
         </div>
-        <section class="registration-sector">
-            <div class="container containers-registration">
-                <form class="container registration-form" action="#">
-                    <fieldset class="registration-fieldset">
-                        <legend class="registration-fieldset__titl">Your Name</legend>
-                        <label for="name"></label>
-                        <input class="registration-fieldset__input" type="text" id="name" placeholder="First Name"
-                            required>
-                        <label for="surname"></label>
-                        <input class="registration-fieldset__input" type="text" id="surname" required
-                            placeholder="Last Name">
-                        <input class="registration-fieldset__radio-input" type="radio" id="male" name="gender"
-                            value="gender" checked>
-                        <label class="registration-fieldset__radio-label" for="male">Male</label>
-                        <input class="registration-fieldset__radio-input" type="radio" id="female" name="gender"
-                            value="gender">
-                        <label class="registration-fieldset__radio-label" for="female">Female</label>
-                    </fieldset>
-                    <fieldset class="registration-fieldset">
-                        <legend class="registration-fieldset__titl">Login details</legend>
-                        <input class="registration-fieldset__input" type="email" id="email" placeholder="Email"
-                            required>
-                        <label for="email"></label>
-                        <input class="registration-fieldset__input" type="password" id="password" placeholder="Password"
-                            required>
-                        <label for="password"></label>
-                        <p class="registration-fieldset__text">Please use 8 or more characters, with at least 1 number
-                            and a mixture of uppercase and
-                            lowercase
-                            letters</p>
-                    </fieldset>
-                    <button class="registration-sector__btn" type="submit">join now</button>
-                </form>
-                <div class="wrapper-perks">
-                    <h2 class="wrapper-perks__title">loyalty has its perks</h2>
-                    <p class="wrapper-perks__text">Get in on the loyalty program where you can earn points and unlock
-                        serious perks. Starting with
-                        these
-                        as soon as you join:</p>
-                    <ul class="perks-list">
-                        <li class="perks-list__item">15% off welcome offer
+        <div class="container">
+            <div class="shopping-cart-wrapper">
+                <section class="shopping-cart">
+                    <ul class="cart">
+                        <li class="cart-product"><img src="./img/product-3.jpg" alt="product photo" width="262"
+                                height="306">
+                            <ul class="product-desc">
+                                <li class="product-desc__item">
+                                    <h2 class="product-desc__title">mango people t-shirt</h2>
+                                </li>
+                                <li class="product-desc__item">Price: <span class="product-desc__item_color">$300</span>
+                                </li>
+                                <li class="product-desc__item">Color: Red</li>
+                                <li class="product-desc__item">Size: Xl </li>
+                                <li class="product-desc__item">Quantity: <button class="product-desc__button-quantity"
+                                        type="button">2</button></li>
+                            </ul>
                         </li>
-                        <li class="perks-list__item">Free shipping, returns and exchanges on all orders
-
+                        <li class="cart-product"><img src="./img/product-7.jpg" alt="product photo" width="262"
+                                height="306">
+                            <ul class="product-desc">
+                                <li class="product-desc__item">
+                                    <h2 class="product-desc__title">mango people t-shirt</h2>
+                                </li>
+                                <li class="product-desc__item">Price: <span class="product-desc__item_color">$300</span>
+                                </li>
+                                <li class="product-desc__item">Color: Red</li>
+                                <li class="product-desc__item">Size: Xl </li>
+                                <li class="product-desc__item">Quantity: <button class="product-desc__button-quantity"
+                                        type="button">2</button></li>
+                            </ul>
                         </li>
-                        <li class="perks-list__item">$10 off a purchase on your birthday
-
-                        </li>
-                        <li class="perks-list__item">Early access to products</li>
-                        <li class="perks-list__item">Exclusive offers & rewards</li>
                     </ul>
-                </div>
+                    <div class="shopping-cart__button-wrapper">
+                        <button class="shopping-cart__clear-dutton" type="reset">clear shopping cart</button>
+                        <a class="shopping-cart__continue-button" href="#">continue shopping</a>
+                    </div>
+                </section>
+                <section class="user-data">
+                    <h2 class="visually-hidden">Form</h2>
+                    <form class="user-form" action="#">
+                        <fieldset class="user-form-inner">
+                            <legend class="user-form__title">shipping adress</legend>
+                            <input class="user-form__input" type="text">
+                            <input class="user-form__input" type="text">
+                            <input class="user-form__input" type="text">
+                            <a class="user-form__button" href="#">get a quote</a>
+                        </fieldset>
+                        <div class="user-data__price-wrapper">
+                            <p class="user-data__price">sub total $900</p>
+                            <p class="user-data__price-large">grand total <span
+                                    class="user-data__price-large_color">$900</span></p>
+                            <button class="user-data__button" type="submit">proceed to checkout</button>
+                        </div>
+                    </form>
+                </section>
             </div>
-        </section>
+        </div>
+
     </main>
     <footer class="footer">
 
