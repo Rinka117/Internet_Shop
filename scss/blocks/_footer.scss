@@ -1,0 +1,131 @@
+.footer {
+    @include overall-width;
+
+    .subscription {
+        background-image: url(../img/photo-subscribe.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        .subscription-inner {
+            display: flex;
+            max-width: 1600px;
+            min-height: 448px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .author-box {
+            text-align: center;
+        }
+
+        .author-box__quote {
+            font-size: 20px;
+            line-height: 24px;
+            color: $black-russian;
+            margin: 30px 0 0;
+            max-width: 359px;
+        }
+
+        .subscribe-form {
+            text-align: center;
+        }
+
+        .subscribe-form__title {
+            font-size: 18px;
+            line-height: 30px;
+            color: $black-russian;
+            text-transform: uppercase;
+            margin: 0 0 32px;
+        }
+
+        .subscribe-title__highlighted {
+            display: block;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 40px;
+        }
+
+        .subscribe-area {
+            display: flex;
+        }
+
+        .subscribe-area__imput {
+            width: 256px;
+            height: 49px;
+            border-radius: 22px 0 0 22px;
+            border: none;
+            background-color: $gainsboro;
+        }
+
+        .subscribe-area__imput[placeholder] {
+            text-overflow: ellipsis;
+            font-size: 14px;
+            line-height: 17px;
+            color: $black-russian;
+            opacity: 0.67;
+            padding: 0 0 0 22px;
+        }
+
+        .subscribe-area__imput:hover,
+        .subscribe-area__imput:focus {
+            outline-color: $froly;
+        }
+
+        .subscribe-area__button {
+            background-color: $froly;
+            width: 100px;
+            height: 49px;
+            border-radius: 0 22px 22px 0;
+            border: none;
+            color: $white;
+        }
+
+        .subscribe-area__button:hover,
+        .subscribe-area__button:focus {
+            @include button-hover
+        }
+    }
+
+    .footer-section {
+        background-color: $black-russian;
+        color: $white;
+
+
+        .footer-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 79px;
+        }
+
+        .socials {
+            display: flex;
+        }
+
+        .socials-box {
+            background-color: $white;
+            width: 31px;
+            height: 32px;
+            margin: 0 7px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .socials__icon-svg {
+            fill: $black;
+        }
+
+        .socials-box:hover,
+        .socials-box:focus {
+            background-color: $froly;
+            cursor: pointer;
+        }
+
+        .socials-box:hover .socials__icon-svg {
+            fill: $white;
+        }
+    }
+}

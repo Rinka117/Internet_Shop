@@ -1,0 +1,9 @@
+@mixin overall-width {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+@mixin button-hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
