@@ -2,6 +2,15 @@
     background-color: $nero;
     @include overall-width;
 
+    @include tablet {
+        max-width: $tablet-width;
+    }
+
+
+    @include mobile {
+        max-width: $mobile-width;
+    }
+
     .header__buttons-wrapper {
         display: flex;
         align-items: center;
@@ -12,6 +21,14 @@
 
     .header__logotipe {
         margin: 0 41px 0 0;
+
+        @include tablet {
+            margin-left: 32px;
+        }
+
+        @include mobile {
+            margin-left: 16px;
+        }
     }
 
     .header__button {
@@ -22,6 +39,14 @@
     .header__button_menu {
         margin: 0 34px 0 0;
         min-height: 75px;
+
+        @include tablet {
+            margin-right: 25px;
+        }
+
+        @include mobile {
+            margin-right: 16px;
+        }
     }
 
     .header__button:hover {
@@ -30,6 +55,24 @@
 
     .header__button_userpic {
         margin: 0 34px 0 0;
+
+        @include tablet {
+            margin-right: 42px;
+        }
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .header__button_basket {
+        @include tablet {
+            margin-right: 32px;
+        }
+
+        @include mobile {
+            display: none;
+        }
     }
 
     .header__button_menu:hover~.owerlay {
@@ -44,31 +87,33 @@
     .owerlay {
         display: none;
         position: absolute;
-        width: 1368px;
+        left: 0;
+        width: 75%;
         min-height: 764px;
         background: rgba(0, 0, 0, 0.5);
-        right: 1px;
-        top: 100%;
-        z-index: +999;
+        z-index: +998;
     }
 
     .header-navigation {
         display: none;
         background-color: $white;
-        width: 232px;
+        width: 25%;
         min-height: 764px;
+        right: 0;
         position: absolute;
-        right: -232px;
-        top: 100%;
         z-index: +999;
         box-shadow: 0 0 232px rgba(0, 0, 0, 0.21);
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     .header-navigation:hover~.header-navigation {
         display: block;
     }
 
-    .owerlay:hover~.owerlay {
+    .header-navigation:hover~.owerlay {
         display: block;
     }
 

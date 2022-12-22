@@ -10,10 +10,19 @@
 
         .subscription-inner {
             display: flex;
-            max-width: 1600px;
+            max-width: $desctop-width;
             min-height: 448px;
             align-items: center;
             justify-content: space-between;
+
+            @include tablet {
+                flex-direction: column;
+                padding: 54px 0 140px;
+            }
+
+            @include mobile {
+                padding-bottom: 110px;
+            }
         }
 
         .author-box {
@@ -38,6 +47,14 @@
             color: $black-russian;
             text-transform: uppercase;
             margin: 0 0 32px;
+
+            @include tablet {
+                margin: 0 0 27px;
+            }
+
+            @include mobile {
+                margin: 0 0 22px;
+            }
         }
 
         .subscribe-title__highlighted {
@@ -52,7 +69,7 @@
         }
 
         .subscribe-area__imput {
-            width: 256px;
+            width: 74%;
             height: 49px;
             border-radius: 22px 0 0 22px;
             border: none;
@@ -75,7 +92,7 @@
 
         .subscribe-area__button {
             background-color: $froly;
-            width: 100px;
+            width: 26%;
             height: 49px;
             border-radius: 0 22px 22px 0;
             border: none;
@@ -98,10 +115,32 @@
             justify-content: space-between;
             align-items: center;
             min-height: 79px;
+
+            @include mobile {
+                flex-direction: column-reverse;
+            }
+        }
+
+        .footer-section__copyright {
+            @include tablet {
+                padding: 0 0 0 32px;
+            }
+
+            @include mobile {
+                padding: 0 0 9px;
+            }
         }
 
         .socials {
             display: flex;
+
+            @include tablet {
+                padding: 0 32px 0 0;
+            }
+
+            @include mobile {
+                padding: 43px 0 40px;
+            }
         }
 
         .socials-box {
