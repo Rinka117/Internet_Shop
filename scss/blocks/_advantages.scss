@@ -8,6 +8,15 @@
         min-height: 341px;
         align-items: center;
         justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+            padding: 0 0 64px;
+        }
+
+        @include mobile {
+            padding: 0 0 81px;
+        }
     }
 
     .advantages-list__item {
@@ -16,6 +25,10 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include tablet {
+            margin: 48px 0 0;
+        }
     }
 
     .advantages-item__title {
