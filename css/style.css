@@ -248,6 +248,16 @@ body {
   padding: 59px 0 60px;
   color: #f16d7f;
 }
+@media (max-width: 768px) {
+  .caption-holder__title {
+    padding-left: 16px;
+  }
+}
+@media (max-width: 375px) {
+  .caption-holder__title {
+    padding-left: 103px;
+  }
+}
 
 .header {
   background-color: #222222;
@@ -982,15 +992,25 @@ body {
   min-height: 675px;
   padding: 64px 0 0;
 }
+@media (max-width: 768px) {
+  .registration-sector .containers-registration {
+    padding: 40px 16px 0;
+  }
+}
+@media (max-width: 375px) {
+  .registration-sector .containers-registration {
+    flex-direction: column;
+  }
+}
 .registration-sector .registration-fieldset {
-  max-width: 360px;
+  max-width: 100%;
 }
 .registration-sector .registration-fieldset__titl {
   font-weight: 300;
 }
 .registration-sector .registration-fieldset__input {
   border: 1px solid #A4A4A4;
-  width: 360px;
+  width: 100%;
   height: 45px;
   margin: 21px 0 0;
 }
@@ -1029,7 +1049,7 @@ body {
 }
 .registration-sector .registration-sector__btn {
   background-color: #f16d7f;
-  width: 167px;
+  width: 46%;
   height: 50px;
   border: none;
   margin: 39px 0 0;
@@ -1054,6 +1074,16 @@ body {
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+}
+@media (max-width: 768px) {
+  .registration-sector .wrapper-perks {
+    margin: 0 0 0 67px;
+  }
+}
+@media (max-width: 375px) {
+  .registration-sector .wrapper-perks {
+    margin: 40px 0 100px;
+  }
 }
 .registration-sector .wrapper-perks__title {
   text-transform: uppercase;
