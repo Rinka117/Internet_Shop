@@ -1,11 +1,24 @@
 .shopping-cart-wrapper {
     display: flex;
     @include overall-width;
+
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .shopping-cart {
     width: 57%;
     margin: 96px 0 128px;
+
+    @include tablet {
+        margin: 59px 0 64px;
+        width: 100%;
+    }
+
+    @include mobile {
+        margin: 39px 0 48px;
+    }
 
     .cart-product {
         display: flex;

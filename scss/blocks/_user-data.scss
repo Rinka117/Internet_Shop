@@ -1,9 +1,36 @@
 .user-data {
-    margin: 113px 0 342px 128px;
+    padding: 113px 0 342px 128px;
     width: 42%;
 
+    @include tablet {
+        width: 100%;
+        padding: 64px 17px 128px;
+    }
+
+    @include mobile {
+        padding: 48px 10px 96px;
+    }
+
+    .user-form {
+        @include tablet {
+            display: flex;
+        }
+
+        @include mobile {
+            display: block;
+        }
+    }
+
     .user-form-inner {
-        margin: 0 0 57px;
+        @include tablet {
+            width: 49%;
+            margin-right: 15px;
+        }
+
+        @include mobile {
+            width: 100%;
+            margin: 0;
+        }
     }
 
     .user-form__title {
@@ -16,6 +43,8 @@
     .user-form__input {
         display: block;
         margin: 0 0 21px;
+        width: 100%;
+        min-height: 44px;
     }
 
     .user-form__button {
@@ -34,6 +63,13 @@
         padding: 39px 34px 42px 44px;
         text-align: end;
         box-sizing: border-box;
+        width: 49%;
+
+
+        @include mobile {
+            width: 100%;
+            margin: 48px 0 0;
+        }
 
         .user-data__price {
             font-weight: 400;
