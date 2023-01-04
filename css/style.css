@@ -216,8 +216,36 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-light.woff) format "woff";
+  src: url(../fonts/lato-light.woff2) format "woff2";
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-regular.woff) format "woff";
+  src: url(../fonts/lato-regular.woff2) format "woff2";
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-bold.woff) format "woff";
+  src: url(../fonts/lato-bold.woff2) format "woff2";
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato-black.woff) format "woff";
+  src: url(../fonts/lato-black.woff2) format "woff2";
+  font-style: normal;
+  font-weight: 900;
+}
 body {
-  font-family: "Lato";
+  font-family: "Lato", "Arial", "sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -248,7 +276,7 @@ body {
   padding: 59px 0 60px;
   color: #f16d7f;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .caption-holder__title {
     padding-left: 16px;
   }
@@ -264,7 +292,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .header {
     max-width: 768px;
   }
@@ -284,7 +312,7 @@ body {
 .header .header__logotipe {
   margin: 0 41px 0 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .header .header__logotipe {
     margin-left: 32px;
   }
@@ -302,7 +330,7 @@ body {
   margin: 0 34px 0 0;
   min-height: 75px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .header .header__button_menu {
     margin-right: 25px;
   }
@@ -319,7 +347,7 @@ body {
 .header .header__button_userpic {
   margin: 0 34px 0 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .header .header__button_userpic {
     margin-right: 42px;
   }
@@ -329,7 +357,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .header .header__button_basket {
     margin-right: 32px;
   }
@@ -421,7 +449,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .brand {
     max-width: 768px;
   }
@@ -449,7 +477,7 @@ body {
   flex-grow: 1;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .brand .brand__title-wrapper {
     padding: 0 33px 0 68px;
   }
@@ -470,7 +498,7 @@ body {
   background-size: 12px 92px;
   left: 64px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .brand .brand__title-wrapper::before {
     left: 40px;
   }
@@ -488,7 +516,7 @@ body {
   line-height: 58px;
   text-transform: uppercase;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .brand .brand__title {
     font-size: 44px;
     line-height: 53px;
@@ -507,7 +535,7 @@ body {
   font-weight: 700;
   line-height: 44px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .brand .brand__subtitle {
     font-size: 24px;
     line-height: 29px;
@@ -533,7 +561,7 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .offers .offers-list {
     padding: 20px 16px 155px;
   }
@@ -552,7 +580,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .offers .offers-list__item {
     min-height: 167px;
   }
@@ -572,7 +600,7 @@ body {
   margin: 0 30px 30px 0;
   background-size: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .offers .offers-list__item_women {
     margin: 0 19px 19px 0;
   }
@@ -587,7 +615,7 @@ body {
   margin: 0 30px 30px 0;
   background-size: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .offers .offers-list__item_men {
     margin: 0 19px 19px 0;
   }
@@ -602,7 +630,7 @@ body {
   margin: 0 0 30px;
   background-size: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .offers .offers-list__item_kids {
     margin: 0 0 19px;
   }
@@ -618,7 +646,7 @@ body {
   min-height: 180px;
   background-size: cover;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .offers .offers-list__item_accesories {
     min-height: 116px;
   }
@@ -653,7 +681,7 @@ body {
   align-items: center;
   padding: 0 0 95px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .products .products-wrapper {
     padding: 0 0 65px;
   }
@@ -674,7 +702,7 @@ body {
   justify-content: space-between;
   margin: 48px 0 48px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .products .products-list {
     margin: 74px 16px 33px;
   }
@@ -691,7 +719,7 @@ body {
   background-color: #f8f8f8;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .products .products-list__item {
     margin: 0 0 16px;
   }
@@ -785,7 +813,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .advantages .advantages-list {
     flex-direction: column;
     padding: 0 0 64px;
@@ -803,7 +831,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .advantages .advantages-list__item {
     margin: 48px 0 0;
   }
@@ -841,7 +869,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .footer .subscription .subscription-inner {
     flex-direction: column;
     padding: 54px 0 140px;
@@ -872,7 +900,7 @@ body {
   text-transform: uppercase;
   margin: 0 0 32px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .footer .subscription .subscribe-form__title {
     margin: 0 0 27px;
   }
@@ -938,7 +966,7 @@ body {
     flex-direction: column-reverse;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .footer .footer-section .footer-section__copyright {
     padding: 0 0 0 32px;
   }
@@ -951,7 +979,7 @@ body {
 .footer .footer-section .socials {
   display: flex;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .footer .footer-section .socials {
     padding: 0 32px 0 0;
   }
@@ -992,7 +1020,7 @@ body {
   min-height: 675px;
   padding: 64px 0 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .registration-sector .containers-registration {
     padding: 40px 16px 0;
   }
@@ -1075,7 +1103,7 @@ body {
   font-size: 24px;
   line-height: 29px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .registration-sector .wrapper-perks {
     margin: 0 0 0 67px;
   }
@@ -1119,7 +1147,7 @@ body {
   max-width: 1600px;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .shopping-cart-wrapper {
     flex-direction: column;
   }
@@ -1129,7 +1157,7 @@ body {
   width: 57%;
   margin: 96px 0 128px;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .shopping-cart {
     margin: 59px 0 64px;
     width: 100%;
@@ -1206,7 +1234,7 @@ body {
   padding: 113px 0 342px 128px;
   width: 42%;
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .user-data {
     width: 100%;
     padding: 64px 17px 128px;
@@ -1217,7 +1245,7 @@ body {
     padding: 48px 10px 96px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .user-data .user-form {
     display: flex;
   }
@@ -1227,7 +1255,7 @@ body {
     display: block;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 376px) {
   .user-data .user-form-inner {
     width: 49%;
     margin-right: 15px;
