@@ -5,146 +5,208 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/bootstrap.css" rel="stylesheet">
-    <link href="./css/all.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Product</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-dark bg-dark container-md">
-        <div class="container-fluid">
-            <a href="./index.html">
-                <i class="fa-solid fa-tree"></i>
-            </a>
-            <button class="header__button" type="button"><i class="fa-duotone fa-magnifying-glass"></i></button>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="header__button header__button_userpic" href="./registration.html">
-                <img src="./img/logo-men.png" alt="userpic" width="29" height="29">
-            </a>
-            <a class="header__button header__button_basket" href="./shopping-cart.html">
-                <img src="./img/buskcet.png" alt="basket" width="32" height="29">
-            </a>
-        </div>
-    </nav>
-    <div class="caption-holder">
-        <h1 class="container-md caption-holder__title">product</h1>
-    </div>
-    <section>
-        <div id="carouselExampleControls" class="carousel slide container-md" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/product-8.jpg" class="d-block w-100" alt="...">
+    <header class="header">
+        <div class="container">
+            <div class="header__buttons-wrapper">
+                <div class="header__items">
+                    <a href="./index.html">
+                        <img class="header__logotipe" src="./img/logotipe.png" alt="logotipe" width="44" height="38">
+                    </a>
+                    <button class="header__button" type="button"><img src="./img/lupe.png" alt="lupe" width="26"
+                            height="27"></button>
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/product-1.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/product-2.jpg" class="d-block w-100" alt="...">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <div class="container-md">
-            <h2>women collection</h2>
-            <h3>moschino cheap and chic</h3>
-            <p>Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
-                collaborative architectures before cutting-edge services. Completely visualize parallel core
-                competencies rather than exceptional portals. </p>
-            <p>$561</p>
-            <div class="dropdown">
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    choose color
-                </a>
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    choose size
-                </a>
-                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    quantity
-                </a>
+                <div class="header__items">
+                    <button class="header__button header__button_menu" type="button">
+                        <img src="./img/menu.png" alt="menu" width="32" height="23">
+                    </button>
+                    <a class="header__button header__button_userpic" href="./registration.html">
+                        <img src="./img/logo-men.png" alt="userpic" width="29" height="29">
+                    </a>
+                    <a class="header__button header__button_basket" href="./shopping-cart.html">
+                        <img src="./img/buskcet.png" alt="basket" width="32" height="29">
+                    </a>
+                    <div class="owerlay"></div>
+                    <nav class="header-navigation">
 
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+                        <button class="header__button header__button_clozing" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none">
+                                <path fill="#6F6E6E"
+                                    d="m7.416 6.004 4.3-4.29a1.004 1.004 0 1 0-1.42-1.42l-4.29 4.3-4.29-4.3a1.004 1.004 0 0 0-1.42 1.42l4.3 4.29-4.3 4.29a1 1 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l4.29-4.3 4.29 4.3a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.22-1.095l-4.3-4.29Z" />
+                            </svg>
+                        </button>
+
+                        <h2 class="header-navigation__title">menu</h2>
+                        <ul class="navigation-menu">
+
+                            <li class="menu-list">
+                                <h3 class="menu-list__title">man</h3>
+                                <ul class="list-items">
+                                    <li class="list-items__item">Accessories</li>
+                                    <li class="list-items__item">Bags</li>
+                                    <li class="list-items__item">Denim</li>
+                                    <li class="list-items__item">T-Shirts</li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-list">
+                                <h3 class="menu-list__title">woman</h3>
+                                <ul class="list-items">
+                                    <li class="list-items__item">Accessories</li>
+                                    <li class="list-items__item">Jackets & Coats</li>
+                                    <li class="list-items__item">Polos</li>
+                                    <li class="list-items__item">T-Shirts</li>
+                                    <li class="list-items__item">Shirts</li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-list">
+                                <h3 class="menu-list__title">kids</h3>
+                                <ul class="list-items">
+                                    <li class="list-items__item">Accessories</li>
+                                    <li class="list-items__item">Jackets & Coats</li>
+                                    <li class="list-items__item">Polos</li>
+                                    <li class="list-items__item">T-Shirts</li>
+                                    <li class="list-items__item">Shirts</li>
+                                    <li class="list-items__item">Bags</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+
             </div>
-            <button type="button" class="btn btn-outline-danger">Add to Cart</button>
 
         </div>
-    </section>
+        <div class="owerlay"></div>
 
-    <div class="container-md">
-        <div class="row">
-            <div class="col-4">
-
-                <img src="./img/product-1.jpg" class="card-img-top" alt="product">
-                <div class="card-body">
-                    <h5 class="card-title">ellery x m'o capsule</h5>
-                    <p class="card-text">Known for her sculptural takes on traditional
-                        tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="product-description__price">$52.00</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-
-                </div>
-            </div>
-
-            <div class="col-4">
-
-                <img src="./img/product-2.jpg" class="card-img-top" alt="product">
-                <div class="card-body">
-                    <h5 class="card-title">ellery x m'o capsule</h5>
-                    <p class="card-text">Known for her sculptural takes on traditional
-                        tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="product-description__price">$52.00</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-
-                </div>
-            </div>
-            <div class="col-4">
-
-                <img src="./img/product-3.jpg" class="card-img-top" alt="product">
-                <div class="card-body">
-                    <h5 class="card-title">ellery x m'o capsule</h5>
-                    <p class="card-text">Known for her sculptural takes on traditional
-                        tailoring,
-                        Australian
-                        arbiter of cool Kym Ellery
-                        teams
-                        up with Moda Operandi.</p>
-                    <p class="product-description__price">$52.00</p>
-                    <a href="#" class="btn btn-primary">Add to Cart</a>
-
-                </div>
+    </header>
+    <main>
+        <div class="caption-holder">
+            <h1 class="container caption-holder__title caption-holder__title_for-product">new arrivals</h1>
+            <div class="caption-holder__breadcrumbs-holder">
+                <a class="caption-holder__breadcrumbs" href="#">home /</a>
+                <a class="caption-holder__breadcrumbs" href="#"> men /</a>
+                <a class="caption-holder__breadcrumbs caption-holder__breadcrumbs_color" href="#"> new arrivals</a>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
+        <section class="product-cart">
+            <h2 class="visually-hidden">Products-cart</h2>
+            <div class="product-cart__screen">
+                <div class="product-cart__img-wrapper"><img class="product-cart__img" src="./img/product-8.jpg"
+                        alt="prouct cart picter" width="597" height="724"></div>
+                <div class="container product-cart__description">
+                    <h2 class="product-cart__title">women collection</h2>
+                    <h3 class="product-cart__sub-title">moschino cheap and chic</h3>
+                    <p class="product-cart__text">Compellingly actualize fully researched processes before proactive
+                        outsourcing.
+                        Progressively
+                        syndicate collaborative architectures before cutting-edge services. Completely visualize
+                        parallel
+                        core competencies rather than exceptional portals. </p>
+                    <p class="product-cart__price">$561</p>
+                    <ul class="product-cart__dropdown">
+                        <li class="dropdown">
+                            <h3 class="dropdown__title">choose color</h3>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">#</li>
+                                <li class="dropdown__item">#</li>
+                                <li class="dropdown__item">#
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <h3 class="dropdown__title">size</h3>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">#</li>
+                                <li class="dropdown__item">#</li>
+                                <li class="dropdown__item">#</li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <h3 class="dropdown__title">quantity</h3>
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item">#</li>
+                                <li class="dropdown__item">#</li>
+                                <li class="dropdown__item">#</li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    <button class="product-cart__add-button" type="submit">Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="products products-wrapper">
+                <div class="container">
+                    <ul class="products-list">
+
+
+                        <li class="products-list__item">
+                            <img class="products-list__picture" src="./img/product-3.jpg" alt="clothes men" width="360"
+                                height="420">
+                            <div class="product-description">
+                                <h3 class="product-description__title">ellery x m'o capsule</h3>
+                                <p class="product-description__features">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery
+                                    teams
+                                    up with Moda Operandi.</p>
+                                <p class="product-description__price">$52.00</p>
+                            </div>
+                            <div class="products-list__owerlay"></div>
+
+                            <button class="products-list__add-button" type="submit">Add to Cart</button>
+
+                        </li>
+                        <li class="products-list__item">
+                            <img class="products-list__picture" src="./img/product-4.jpg" alt="clothes men" width="360"
+                                height="420">
+                            <div class="product-description">
+                                <h3 class="product-description__title">ellery x m'o capsule</h3>
+                                <p class="product-description__features">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery
+                                    teams
+                                    up with Moda Operandi.</p>
+                                <p class="product-description__price">$52.00</p>
+                            </div>
+                            <div class="products-list__owerlay"></div>
+
+                            <button class="products-list__add-button" type="submit">Add to Cart</button>
+
+                        </li>
+
+                        <li class="products-list__item">
+                            <img class="products-list__picture" src="./img/product-6.jpg" alt="clothes woman"
+                                width="360" height="420">
+                            <div class="product-description">
+                                <h3 class="product-description__title">ellery x m'o capsule</h3>
+                                <p class="product-description__features">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian
+                                    arbiter of cool Kym Ellery
+                                    teams
+                                    up with Moda Operandi.</p>
+                                <p class="product-description__price">$52.00</p>
+                            </div>
+                            <div class="products-list__owerlay"></div>
+
+                            <button class="products-list__add-button" type="submit">Add to Cart</button>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
     <footer class="footer">
 
         <section class="subscription">
@@ -157,7 +219,8 @@
                             purus condimentum“</p>
                     </div>
                     <form class="subscribe-form" action="#" method="post">
-                        <h2 class="subscribe-form__title"><span class="subscribe-title__highlighted">subscribe</span>
+                        <h2 class="subscribe-form__title"><span
+                                class="subscribe-form__title-highlighted">subscribe</span>
                             for our newletter and promotion</h2>
                         <div class="subscribe-area"> <input class="subscribe-area__imput" type="email"
                                 placeholder="Enter Your Email">
@@ -216,9 +279,6 @@
         </section>
 
     </footer>
-
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/all.js"></script>
 </body>
 
 </html>

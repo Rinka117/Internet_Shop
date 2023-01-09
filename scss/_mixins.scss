@@ -10,7 +10,7 @@
 
 
 @mixin tablet {
-    @media (max-width: $tablet-width) and (min-width: 376px) {
+    @media (max-width: $tablet-width) {
         @content;
     }
 }

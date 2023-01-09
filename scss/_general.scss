@@ -20,6 +20,7 @@ body {
     min-height: 148px;
     background-color: $lavender-blush;
     @include overall-width;
+    position: relative;
 }
 
 .caption-holder__title {
