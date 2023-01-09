@@ -1,0 +1,236 @@
+.caption-holder__breadcrumbs-holder {
+    position: absolute;
+    top: 65px;
+    right: 65px;
+
+
+    @include mobile {
+        right: 83px;
+        top: 85px;
+    }
+}
+
+.caption-holder__title_for-product {
+    @include mobile {
+        padding: 24px 95px 95px;
+    }
+}
+
+.caption-holder__breadcrumbs {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $matterhorn;
+
+    &_color {
+        color: $froly;
+    }
+}
+
+.caption-holder__breadcrumbs:hover,
+.caption-holder__breadcrumbs:focus {
+    cursor: pointer;
+    color: $lavender-blush;
+    background-color: $zambezi;
+    text-shadow: 1px 1px 10px $wild-watermelon
+}
+
+
+.product-cart__description {
+    padding: 65px 292px;
+
+    @include tablet {
+        padding: 65px 106px;
+    }
+
+    @include mobile {
+        padding: 64px 24px;
+    }
+}
+
+.product-cart__screen {
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+.product-cart__img-wrapper {
+    background-color: $white-smoke;
+    @include overall-width;
+    position: relativ;
+}
+
+.product-cart__img {
+    @include tablet {
+        max-width: 466px;
+        height: 565px;
+
+        @include mobile {
+            max-width: 374px;
+            height: 454px;
+        }
+    }
+}
+
+.product-cart__img-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    background-image: url(../svg/arrow-left.svg);
+    background-size: 12px 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: $nero;
+    top: 565px;
+    left: 0;
+}
+
+.product-cart__img-wrapper::after {
+    content: '';
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    background: rgba(42, 42, 42, 0.15);
+    background-image: url(../svg/arrow-right.svg);
+    background-size: 12px 21px;
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: $nero;
+    top: 565px;
+    right: 0;
+}
+
+.product-cart__title {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin: 0 0 27px;
+    color: $froly;
+    position: relative;
+}
+
+.product-cart__title::before {
+    content: '';
+    position: absolute;
+    background-color: $froly;
+    width: 63px;
+    height: 3px;
+    top: 26px;
+    left: 240px;
+
+    @include mobile {
+        left: 134px;
+    }
+}
+
+.product-cart__sub-title {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: $black-russian;
+    text-transform: uppercase;
+    margin: 0 0 48px;
+
+    @include mobile {
+        margin: 0 0 32px;
+    }
+}
+
+.product-cart__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $black-russian;
+    margin: 0 0 32px;
+    max-width: 100%;
+}
+
+.product-cart__price {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin: 0 0 130px;
+    color: $wild-watermelon;
+
+    @include mobile {
+        margin: 0 0 82px;
+    }
+}
+
+.product-cart__dropdown {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 49px;
+
+    @include mobile {
+        margin: 0 0 65px;
+    }
+
+}
+
+.dropdown:hover,
+.dropdown:focus {
+    cursor: pointer;
+    color: $lavender-blush;
+    background-color: $zambezi;
+    text-shadow: 1px 1px 10px $wild-watermelon;
+}
+
+.dropdown__list {
+    display: none;
+}
+
+.dropdown__title {
+    margin: 0 42px 0 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: $dim-gray;
+    text-transform: uppercase;
+    position: relative;
+
+    @include mobile {
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+
+.dropdown__title::after {
+    content: '';
+    position: absolute;
+    background-image: url(../img/mark.png);
+    width: 10px;
+    height: 5px;
+    top: 3px;
+    right: -19px;
+}
+
+.product-cart__add-button {
+    color: $bittersweet;
+    background-color: transparent;
+    border: 1px solid $bittersweet;
+    padding: 15px 56px 14px 72px;
+    position: relative;
+}
+
+.product-cart__add-button::before {
+    content: '';
+    width: 26px;
+    height: 24px;
+    position: absolute;
+    background-image: url(../img/buskcet.png);
+    background-size: 26px 24px;
+    left: 13px;
+    bottom: 8px;
+}
+
+.product-cart__add-button:hover,
+.product-cart__add-button:focus {
+    color: $white;
+    background-color: $wild-watermelon;
+    border: $white;
+}

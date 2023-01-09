@@ -40,7 +40,7 @@
     }
 
     .products-list__item {
-        max-width: 360px;
+        max-width: 31%;
         min-height: 581px;
         margin: 0 0 30px;
         background-color: $white-smoke;
@@ -48,11 +48,18 @@
 
         @include tablet {
             margin: 0 0 16px;
+            max-width: 47%;
+        }
+
+        @include mobile {
+            max-width: 100%;
         }
     }
 
     .products-list__picture {
         display: block;
+        width: 100%;
+        height: auto;
     }
 
     .product-description {
@@ -77,7 +84,7 @@
         margin: 18px 0 2px 0;
     }
 
-    .products-item__owerlay {
+    .products-list__owerlay {
         display: none;
         position: absolute;
         width: 100%;
@@ -86,7 +93,7 @@
         background: rgba(58, 56, 56, 0.86);
     }
 
-    .products-item__add-button {
+    .products-list__add-button {
         position: absolute;
         background: transparent;
         color: $white;
@@ -100,7 +107,7 @@
         display: none;
     }
 
-    .products-item__add-button::before {
+    .products-list__add-button::before {
         content: '';
         width: 26px;
         height: 24px;
@@ -111,17 +118,17 @@
         bottom: 8px;
     }
 
-    .products-list__item:hover .products-item__owerlay {
+    .products-list__item:hover .products-list__owerlay {
         display: block;
         cursor: pointer;
     }
 
-    .products-list__item:hover .products-item__add-button {
+    .products-list__item:hover .products-list__add-button {
         display: block;
         cursor: pointer;
     }
 
-    .products-item__add-button:hover {
+    .products-list__add-button:hover {
         border-color: $bittersweet;
         color: $bittersweet;
     }
